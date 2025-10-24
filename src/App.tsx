@@ -26,7 +26,7 @@ export default function App() {
 
         <h4>Palpite</h4>
         <div>
-          <Input autofocus maxLength={1} placeholder="?" />
+          <Input autoFocus maxLength={1} placeholder="?" />
         </div>
 
       </main>
