@@ -25,3 +25,10 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+.guess {
+  display: flex;
+  gap: .75rem;
+
+  margin-top: .75rem;
+}
