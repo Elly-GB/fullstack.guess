@@ -15,6 +15,10 @@ export default function App() {
         <Header current={5} max={10} onRestart={handleRestartGame} />
         <Tip tip="Uma das linguagens de programação mais utilizadas" />
         <Letter value="R" />
+        <Letter value="E" />
+        <Letter value="A" />
+        <Letter value="C" />
+        <Letter value="T" />
       </main>
     </div>
   )
