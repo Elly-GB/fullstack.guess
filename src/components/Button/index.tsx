@@ -4,7 +4,7 @@ type Props = React.ComponentProps<"button"> & {
   title: string
 }
 
-export function Button({ title, ..props }: Props) {
+export function Button({ title, ...props }: Props) {
   return ( 
   <button type="button" className={styles.button}>
     {title}
