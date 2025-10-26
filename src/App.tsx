@@ -1,7 +1,8 @@
 import styles from "./app.module.css"
 import { useEffect, useState } from "react"
 
-import { WORDS, Challenge } from "./utils/words"
+import { WORDS } from "./utils/words"
+import type { Challenge } from "./utils/words"
 
 import { Tip } from "./components/Tip"
 import { Input } from "./components/Input"
