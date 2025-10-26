@@ -9,7 +9,8 @@ import { Input } from "./components/Input"
 import { Button } from "./components/Button"
 import { Letter } from "./components/Letter"
 import { Header } from "./components/Header"
-import { LettersUsed, LettersUsedProps } from "./components/LettersUsed"
+import { LettersUsed } from "./components/LettersUsed"
+import type { LettersUsedProps } from "./components/LettersUsed"
 
 export default function App() {
   const [letter, setLetter] = useState("")
