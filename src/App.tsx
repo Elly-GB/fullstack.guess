@@ -25,7 +25,7 @@ export default function App() {
           <Letter value="T" />
         </div>
 
-        <h4>Palpite</h4>
+        <h4>Palpites</h4>
         <div className={styles.guess}>
           <Input autoFocus maxLength={1} placeholder="?" />
           <Button title="Confirmar" />
