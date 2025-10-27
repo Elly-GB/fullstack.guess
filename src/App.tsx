@@ -84,7 +84,7 @@ export default function App() {
 
       const attemptLimit = challenge.word.length + ATTEMPTS_MARGIN
 
-      if (LettersUsed.length === attemptLimit) {
+      if (lettersUsed.length === attemptLimit) {
         return endGame("Que pena, você usou todas as tentativas...")
       }
 
