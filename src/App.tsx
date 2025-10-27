@@ -12,10 +12,11 @@ import { Header } from "./components/Header"
 import { LettersUsed } from "./components/LettersUsed"
 import type { LettersUsedProps } from "./components/LettersUsed"
 
+const ATTEMPTS_MARGIN = 5
+
 export default function App() {
   const [score, setScore] = useState(0)
   const [letter, setLetter] = useState("")
-  const [attempts, setAttempts] = useState(0)
   const [lettersUsed, setLettersUsed] = useState<LettersUsedProps[]>([])
   const [challenge, setChallenge] = useState<Challenge | null>(null)
 
@@ -29,7 +30,7 @@ export default function App() {
 
     setChallenge(randomWord)
 
-    setAttempts(0)
+    setScore(0)
     setLetter("")
     setLettersUsed([])
   }
@@ -73,7 +74,12 @@ export default function App() {
   return (
     <div className={styles.container}>
       <main>
-        <Header current={score} max={10} onRestart={handleRestartGame} />
+        <Header 
+          current={lettersUsed.length} 
+          max={challenge.word.length + ATTEMPTS_MARGIN} 
+          onRestart={handleRestartGame} 
+        />
+
         <Tip tip={challenge.tip} />
 
         <div className={styles.word}>
