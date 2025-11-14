@@ -110,7 +110,7 @@ export default function App() {
 
         <Tip tip={challenge.tip} />
 
-        <div className={styles.word}>
+        <div className={`${styles.word} ${styles.shake}`}>
           {challenge.word.split("").map((letter, index) => {
             const letterUsed = lettersUsed.find((used) => used.value.toUpperCase() === letter.toUpperCase())
 
